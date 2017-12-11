@@ -38,3 +38,26 @@ describe("Nombre de la prueba o conjunto de pruebas", () => {
 ~~~
 
 > Ejecutamos las pruebas unitarias mediante: `$ mocha`
+
+## Callbacks
+
+Un callback es una función enviada como parámetro de otra, que continua el flujo de la función principal, y esta es llamada, cuando la función principal lo determina. Por ejemplo, una función tiene el objetivo de realizar una busqueda en la base de datos, cuando los resultados están listos, esta debe entregarsélos a la función callback.
+
+~~~js
+const db = require("./db");
+
+db.find("gatos", result => {
+    console.log(result);
+});
+
+db.find("perros", function (result) {
+    console.log(result);
+});
+
+db.find("pájaros", function callback(result) {
+    console.log(result);
+});
+~~~
+
+Es importante observar del código anterior, que las 3 consultas, se realizarán de forma asíncrona, es decir casi al mismo tiempo.
+
