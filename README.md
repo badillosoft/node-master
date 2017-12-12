@@ -2,10 +2,6 @@
 
 Repositorio para la preparación a la Certificación de Node
 
-## Videos
-
-> Sesión 1 - https://youtu.be/a9CCDfFuREA
-
 ## Pruebas Unitarias
 
 Node provee un módulo llamado `assert` que nos permite hacer distintos tipos de pruebas unitarias, por ejemplo, determinar si dos objetos son iguales `assert.deepStrictEqual({ a: 1 }, { a: "1" })`, dicha prueba puede pasar (no hacer nada) o puede fallar (devolver un error) en caso de que no pase la prueba.
