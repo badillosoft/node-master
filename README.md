@@ -8,7 +8,7 @@ Node provee un módulo llamado `assert` que nos permite hacer distintos tipos de
 
 ~~~js
 const assert = require("assert");
-const mi_modulo = require("./mi_modulo);
+const mi_modulo = require("./mi_modulo");
 
 const result = mi_modulo.conectar("user", "password");
 
@@ -39,7 +39,7 @@ describe("Nombre de la prueba o conjunto de pruebas", () => {
 
 > Ejecutamos las pruebas unitarias mediante: `$ mocha`
 
-## Callbacks
+## Callbacks
 
 Un callback es una función enviada como parámetro de otra, que continua el flujo de la función principal, y esta es llamada, cuando la función principal lo determina. Por ejemplo, una función tiene el objetivo de realizar una busqueda en la base de datos, cuando los resultados están listos, esta debe entregarsélos a la función callback.
 
@@ -63,7 +63,7 @@ Es importante observar del código anterior, que las 3 consultas, se realizarán
 
 ## Eventos
 
-Los eventos nos permiten ejecutar funciones cuando el controlador de eventos genera dichos eventos. El controlador de eventos puede emitir todos los eventos que quiera y cada que emita un evento, este será escuchado por los `listeners` registrados para escuchar dicho evento. Un ejemplo simple consiste en un evento simple que dispara el evento `par`, cada que lee un número par y dispara el evento `impar` cuando lee un número impar. Ambos eventos son emitidos, enviando cualquier cantidad de parámetros, para que los `listeners` registrados puedan acceder a dichos parámetros y hacer cualquier cosa con ellos.
+Los eventos nos permiten ejecutar funciones cuando el controlador de eventos genera dichos eventos. El controlador de eventos puede emitir todos los eventos que quiera y cada que emita un evento, este será escuchado por los `listeners` registrados para escuchar dicho evento. Un ejemplo simple consiste en un evento simple que dispara el evento `par`, cada que lee un número par y dispara el evento `impar` cuando lee un número impar. Ambos eventos son emitidos, enviando cualquier cantidad de parámetros, para que los `listeners` registrados puedan acceder a dichos parámetros y hacer cualquier cosa con ellos.
 
 ~~~js
 // Cargamos la clase padre de la que derivan todos los controladores de eventos
