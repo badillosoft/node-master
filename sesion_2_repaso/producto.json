@@ -1,0 +1,7 @@
+{
+  "nombre": "Coca",
+  "descripcion": "Refresco",
+  "costo": 12.5,
+  "existencias": 1000,
+  "agotado": false
+}
